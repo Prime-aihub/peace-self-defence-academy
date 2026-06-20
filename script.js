@@ -335,7 +335,7 @@ form?.addEventListener("submit",(e)=>{
 
     const whatsappMessage =
 
-🥋 New Trial Class Enquiry
+ `🥋 New Trial Class Enquiry
 
 Student Name: ${studentName.value}
 
