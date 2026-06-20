@@ -269,19 +269,19 @@ body.dark .header{
 }
 
 .tagline{
-
     display:inline-block;
+
+    margin-top:60px; /* increase or decrease */
+
+    margin-bottom:25px;
 
     padding:10px 20px;
 
     border-radius:50px;
 
-    background:
-    rgba(255,255,255,.1);
+    background:rgba(255,255,255,.1);
 
     backdrop-filter:blur(10px);
-
-    margin-bottom:25px;
 }
 
 .hero h1{
