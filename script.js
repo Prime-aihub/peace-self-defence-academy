@@ -313,38 +313,52 @@ form?.addEventListener("submit",(e)=>{
 
     e.preventDefault();
 
-    const inputs =
-    form.querySelectorAll("input");
+    const studentName =
+    form.querySelector('input[type="text"]');
 
-    let valid = true;
+    const age =
+    form.querySelector('input[type="number"]');
 
-    inputs.forEach(input=>{
+    const phone =
+    form.querySelector('input[type="tel"]');
 
-        if(input.value.trim() === ""){
+    if(
+        studentName.value.trim() === "" ||
+        age.value.trim() === "" ||
+        phone.value.trim() === ""
+    ){
 
-            input.style.border =
-            "2px solid red";
+        alert("Please fill all fields");
 
-            valid = false;
-
-        }else{
-
-            input.style.border =
-            "1px solid #ddd";
-        }
-
-    });
-
-    if(valid){
-
-        alert(
-        "Trial Class Request Submitted Successfully!"
-        );
-
-        form.reset();
+        return;
     }
 
+    const whatsappMessage =
+
+🥋 New Trial Class Enquiry
+
+Student Name: ${studentName.value}
+
+Age: ${age.value}
+
+Phone Number: ${phone.value}
+
+Interested In:
+Peace Self-Defence Academy Trial Class`;
+
+    const whatsappURL =
+
+`https://wa.me/919004130508?text=${encodeURIComponent(whatsappMessage)}`;
+
+    window.open(
+        whatsappURL,
+        "_blank"
+    );
+
+    form.reset();
+
 });
+
 
 
 /* =====================================
