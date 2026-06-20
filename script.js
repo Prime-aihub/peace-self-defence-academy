@@ -333,7 +333,9 @@ form?.addEventListener("submit",(e)=>{
         return;
     }
 
-    const whatsappMessage = `🥋 New Trial Class Enquiry
+    const whatsappMessage =
+
+`🥋 New Trial Class Enquiry
 
 Student Name: ${studentName.value}
 
@@ -356,7 +358,6 @@ Peace Self-Defence Academy Trial Class`;
     form.reset();
 
 });
-
 
 
 /* =====================================
